@@ -19,17 +19,21 @@ public class WebservicesMethods {
 	public static Response get(String url) {
 		
 		RequestSpecification requestspecification = RestAssured.given();
-		requestspecification.contentType(ContentType.JSON);
+	requestspecification.contentType(ContentType.JSON);
+	
 		Response response = requestspecification.get(url);
 		System.out.println("The response is :"+ response);
 		return response;
 		
 	}
 	
-	public static Response deletecall(String url)	{
+	public  Response deletecall(String url)	{
 		
 		RequestSpecification requestspecdele = RestAssured.given();
-		return null;
+		//RequestSpecification.contentType(ContentType.JSON);
+		requestspecdele.contentType(ContentType.JSON);
+		Response response = requestspecdele.get(url);
+		return response;
 		
 	}
 

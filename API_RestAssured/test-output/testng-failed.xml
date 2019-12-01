@@ -5,7 +5,7 @@
     <classes>
       <class name="Com.Mukesh.Api.getData">
         <methods>
-          <include name="postcallworking"/>
+          <include name="validateResponsebody"/>
         </methods>
       </class> <!-- Com.Mukesh.Api.getData -->
     </classes>
